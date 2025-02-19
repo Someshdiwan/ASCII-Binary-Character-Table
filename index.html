@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="View and download the ASCII Binary Character Table PDF.">
+    <meta property="og:title" content="ASCII Binary Character Table">
+    <meta property="og:description" content="A quick reference ASCII Binary Character Table available for viewing and download.">
+    <meta property="og:image" content="preview.png"> <!-- Optional image -->
+    <meta property="og:url" content="https://your-vercel-project.vercel.app/">
+    <meta name="robots" content="index, follow">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASCII Binary Character Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        iframe {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            max-width: 800px;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>ASCII - Binary Character Table</h1>
 
-    <!-- Method 1: Using <iframe> -->
-    <iframe src="ASCII%20-%20Binary%20Character%20Table.pdf" width="100%" height="600px"></iframe>
+    <!-- PDF Display -->
+    <iframe src="ASCII%20-%20Binary%20Character%20Table.pdf" width="80%" height="600px"></iframe>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Method 2: Using <embed> -->
     <!-- <embed src="ASCII%20-%20Binary%20Character%20Table.pdf" width="100%" height="600px" type="application/pdf"> -->
@@ -18,6 +59,12 @@
     <!-- <object data="ASCII%20-%20Binary%20Character%20Table.pdf" type="application/pdf" width="100%" height="600px">
         <p>Your browser does not support PDFs. <a href="ASCII%20-%20Binary%20Character%20Table.pdf">Download instead</a>.</p>
     </object> -->
-
+    
+    <!-- Download Button -->
+    <p>
+        <a href="ASCII%20-%20Binary%20Character%20Table.pdf" download class="download-btn">
+            📥 Download PDF
+        </a>
+    </p>
 </body>
 </html>
