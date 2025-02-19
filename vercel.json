@@ -1,13 +1,10 @@
 {
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
-  ],
-  "headers": [
+  "version": 2,
+  "public": true,
+  "builds": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "max-age=3600" }
-      ]
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ]
 }
