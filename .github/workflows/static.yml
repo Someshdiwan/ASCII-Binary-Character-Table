@@ -21,14 +21,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Setup Pages
+
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - name: Upload Static Files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # ✅ Uploads everything in the repo
+          path: '.'  # ✅ Uploads everything (PDF included)
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
